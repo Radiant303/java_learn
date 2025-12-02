@@ -1,5 +1,7 @@
 package com.itheima.demo5;
 
+import static java.lang.System.out;
+
 public class TestDemo5 {
     public static void main(String[] args) {
         //二维数组
@@ -10,9 +12,12 @@ public class TestDemo5 {
         };
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < a[i].length; j++) {
-                System.out.print(a[i][j]+" ");
+                out.print(a[i][j]+" ");
             }
-            System.out.println();
+            out.println();
         }
+
+        //输出当前java版本
+        out.println(System.getProperty("java.version"));
     }
 }
