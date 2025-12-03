@@ -26,5 +26,6 @@ public class GridFriendTest {
         gf2.sleep();
         gf2.eat();
 
+
     }
 }
