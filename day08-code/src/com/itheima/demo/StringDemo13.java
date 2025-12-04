@@ -25,8 +25,24 @@ public class StringDemo13 {
     }
     //将内容变成罗马数字 1 2 3 4 5 6 7 8 9
     public static String toRoman(int number) {
-        String[]  arr = {"","Ⅰ","Ⅱ","Ⅲ","Ⅳ","Ⅴ","Ⅵ","Ⅶ","Ⅷ","Ⅸ"};
-        return arr[number];
+        //String[]  arr = {"","Ⅰ","Ⅱ","Ⅲ","Ⅳ","Ⅴ","Ⅵ","Ⅶ","Ⅷ","Ⅸ"};
+        //return arr[number];
+
+        //switch实现
+        String s = switch (number){
+            case 0 -> "";
+            case 1 -> "Ⅰ";
+            case 2 -> "Ⅱ";
+            case 3 -> "Ⅲ";
+            case 4 -> "Ⅳ";
+            case 5 -> "Ⅴ";
+            case 6 -> "Ⅵ";
+            case 7 -> "Ⅶ";
+            case 8 -> "Ⅷ";
+            case 9 -> "Ⅸ";
+            default -> s = "";
+        };
+        return s;
     }
 
     public static  boolean checkStr(String str) {
