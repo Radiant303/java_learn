@@ -8,6 +8,7 @@ import java.util.TreeSet;
 public class PokerGame {
     static HashMap<Integer,String> pokerMap = new HashMap<>();
     static ArrayList<Integer> list = new ArrayList<>();
+
     static {
         //创建一个数组保存54张牌
         String[] colors = {"♦", "♣", "♥", "♠"};
@@ -29,6 +30,8 @@ public class PokerGame {
         list.add(serialNumber);
         pokerMap.put(serialNumber+1,"大王");
         list.add(serialNumber+1);
+
+        //指定牌的价值
         System.out.println(pokerMap);
         System.out.println(list);
     }
