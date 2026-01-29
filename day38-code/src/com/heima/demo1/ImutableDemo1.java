@@ -2,6 +2,7 @@ package com.heima.demo1;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -20,6 +21,13 @@ public class ImutableDemo1 {
         System.out.println(integers);
         for (Integer next : integers) {
             System.out.println(next);
+        }
+
+        //Map
+        Map<String, String> map = Map.of("张三", "张三", "王五", "王五");
+        System.out.println(map);
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ":" + entry.getValue());
         }
     }
 }
