@@ -2,6 +2,7 @@ package com.heima.demo;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.function.IntFunction;
 import java.util.function.Predicate;
 import java.util.stream.Stream;
 
@@ -25,7 +26,18 @@ public class StreamDemo3 {
             }
         }).forEach(System.out::println);
 
-        stream1.filter(s -> s.startsWith("张"));
+
+        String[] array = list.stream().toArray(new IntFunction<String[]>() {
+            @Override
+            public String[] apply(int value) {
+                return new String[value];
+            }
+        });
+
+        String[] arr = list.stream().toArray(String[]::new);
+        for (String s : array) {
+            System.out.println(s);
+        }
 
     }
 }
