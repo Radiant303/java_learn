@@ -28,7 +28,7 @@ public class sendQQEmail {
             email.setFrom("3368894004@qq.com", "万果象棋");
 
             // 收件人
-            email.addTo("3511078185@qq.com");
+            email.addTo("85154096@qq.com");
             email.setCharset("UTF-8");
             // 主题和内容
             email.setSubject("【万果象棋】验证码通知");
