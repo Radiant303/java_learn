@@ -1,2 +1,1 @@
-bc
-hello world
+你好田田

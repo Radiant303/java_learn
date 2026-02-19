@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class IoDemo2 {
     public static void main(String[] args) throws IOException {
-        FileOutputStream fos = new FileOutputStream("day43-code\\a.txt");
+        FileOutputStream fos = new FileOutputStream("day43-code\\a.txt", true);
 
         byte[] bytes = {97,98,99};
         fos.write(bytes,1,2);
