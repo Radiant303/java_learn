@@ -81,6 +81,6 @@ public class Student {
     }
 
     public String toString() {
-        return "Student{name = " + name + ", gender = " + gender + ", age = " + age + ", weight = " + weight + "}";
+        return name + "-" + gender + "-" + age + "-" + weight;
     }
 }
