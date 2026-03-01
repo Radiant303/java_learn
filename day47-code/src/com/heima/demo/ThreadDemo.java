@@ -1,6 +1,6 @@
 package com.heima.demo;
 
-public class ThreadDemo {
+public class ThreadDemo  {
     public static void main(String[] args) {
         //多线程的第一种实现方式
         //重写run方法
