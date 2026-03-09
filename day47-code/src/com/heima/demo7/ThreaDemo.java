@@ -5,7 +5,6 @@ public class ThreaDemo {
         MyThread mt1 = new MyThread();
         MyThread mt2 = new MyThread();
         MyThread mt3 = new MyThread();
-        mt1.start();
 
 
     }
