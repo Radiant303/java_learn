@@ -21,7 +21,7 @@ public class sendQQEmail {
             email.setHostName("smtp.qq.com");
             email.setSmtpPort(465);
             email.setSSLOnConnect(true);
-            email.setAuthentication("3368894004@qq.com", "epdfebmndlypcjgf");
+            email.setAuthentication("3368894004@qq.com", "");
             email.setFrom("3368894004@qq.com", "万果象棋");
             email.addTo("3368894004@qq.com");
             email.setCharset("UTF-8");
